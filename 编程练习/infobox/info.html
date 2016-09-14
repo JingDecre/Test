@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>infobox</title>
+	<style>
+		.box{
+			position: relative;
+			text-align: center;
+			margin: 0 auto;
+			width: 400px;
+			overflow: hidden;
+		}
+		.infobox{
+			width: 400px;
+			background-color:#0085d0; 
+			color: #fff;
+			font-size:16px;
+			padding: 10px 0 ;
+			overflow: hidden;
+		}
+		.hd{
+			margin: 15px 20px 5px 20px;
+			height: 30px;
+			border-bottom: 1px dotted #ccc;
+			line-height: 30px;
+
+		}
+		.hd .hd-left{
+			float: left;
+			width: 48%;
+			text-align: left; 
+			font-size: 25px;
+
+		}
+		.hd .hd-right{
+			float: left;
+			width: 48%;
+			text-align: left; 
+			margin-left:5px;
+			font-size: 14px;
+		}
+		.info-tontent{
+			margin: 5px 20px;
+			height: 150px;
+		}
+		.info-top,.info-bottom {
+			border-bottom: 1px dotted #ccc;
+			height: 70px;
+			line-height: 70px;
+		}
+		.info-item{
+			width: 48%;
+			text-align: left;
+			float: left;
+		}
+		.info-item span{
+			font-size: 35px;
+		}
+		.info-item-2{
+			margin-left: 5px;
+		}
+		.bot{
+			width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 30px solid #0085d0; 
+            margin-left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+	<div class="infobox">
+		<div class="hd"><div class="hd-left">万达广场</div>
+		<div class="hd-right">在线</div></div>
+		<div class="info-tontent">
+			<div class="info-top">
+				<div class="info-item info-item-1">总车位：<span>888</span></div>
+				<div class="info-item info-item-2">剩余车位：<span>33</span></div>
+			</div>
+			<div class="info-bottom">
+				<div class="info-item info-item-1">入场数：<span>10000</span></div>
+				<div class="info-item info-item-2">出场数：<span>888</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="bot"></div>
+	</div>
+</body>
+</html>

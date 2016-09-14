@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>收入分析</title>
+	<link rel="stylesheet" href="css/analysis.css" />
+	<script src="js/require.js" data-main="js/main"></script>
+</head>
+<body>
+	<div class="toolbar">
+		<a href="#" class="toolbar-item toolbar-item-index"></a>
+		<a href="#top" class="toolbar-item toolbar-item-top"></a>
+	</div>
+	<!-- toolbar结束 -->
+	<div class="top">
+		<div class="top_left">
+			<div class="logo">科拓云平台</div>
+		</div>
+		<!-- top_left结束 -->
+		<div id="top_right">
+   <ul class="loginer">
+   
+ 
+  <li><a href="#" style="color:#fff;">欢迎您，廖福安</a>
+    <ul>
+    	<li><a href="#">修改密码</a></li>
+      <li><a href="#">退出登录</a></li>
+      </ul>
+  </li>
+  
+  
+</ul>
+
+
+</div> 
+		<!-- top_right结束 -->
+	</div>
+	<!-- top结束 -->
+	<div id="mainView">
+		<div class="nav">
+			<div class="nav_left">
+				<input type="text" class="allPark"/>
+				<input type="button" class="parkBtn" value="全部车场" />
+			</div>
+			<!-- nav_left结束 -->
+			<div class="nav_right">
+				<div class="operateDrill">
+					<ul class="tabTit">
+						<li  onclick="queryData(0)" class="tabhover">一天</li>
+						<li  onclick="queryData(7)">一周</li>
+						<li  onclick="queryData(30)">一个月</li>
+					</ul>
+				</div>
+			</div>
+			<!-- nav_right结束 -->
+		</div>
+		<!-- nav结束 -->
+		<div class="wrap">
+			<div class="wrap_left">
+				<div class="side">
+					<div class="side-item side-item-sel">
+						<a href="#top">
+							数据分析
+							<span>∨</span>
+						</a>
+					</div>
+					<div class="side-item">
+						<a href="#container1">收入分析</a>
+					</div>
+					<div class="side-item">
+						<a href="#container3">流量分析</a>
+					</div>
+				</div>
+			</div>
+			<!-- wrap-left结束 -->
+			<div class="wrap_right">
+				<div class="ana-content">
+					<div class="card card-1">
+						<div class="card-num">
+							<div class="card-num-1">总车场数</div>
+							<div class="card-num-2">
+								<div class="card-image"></div>
+								<div class="card-desc"><span>50</span><br/>个</div>
+							</div>
+							<div class="card-num-3">同比增长：10%</div>
+						</div>
+					</div>
+					<div class="card card-2">
+						<div class="card-num">
+							<div class="card-num-1">累计总收入</div>
+							<div class="card-num-2">
+							<div class="card-image"></div>
+								<div class="card-desc"><span>50000000</span><br/>元</div></div>
+							<div class="card-num-3">同比增长：6%</div>
+						</div>
+					</div>
+
+					<div class="card card-3">
+						<div class="card-num">
+							<div class="card-num-1">累计总流量</div>
+							<div class="card-num-2">
+							<div class="card-image"></div>
+								<div class="card-desc"><span>50000000</span><br/>辆</div></div>
+							<div class="card-num-3">同比增长：6%</div>
+						</div>
+					</div>
+
+					<div class="card card-4">
+						<div class="card-num">
+							<div class="card-num-1">异常车流量</div>
+							<div class="card-num-2">
+							<div class="card-image"></div>
+								<div class="card-desc"><span>5000000.0</span><br/>辆</div></div>
+							<div class="card-num-3">同比增长：6%</div>
+						</div>
+					</div>
+					<div class="card card-5">
+						<div class="card-num">
+							<div class="card-num-1">平均收入</div>
+							<div class="card-num-2">
+							<div class="card-image"></div>
+								<div class="card-desc"><span>5</span><br/>元/辆</div></div>
+							<div class="card-num-3">同比增长：6%</div>
+						</div>
+					</div>
+				</div>
+				<!-- ana-content结束 -->
+				<div class="ana-content-charts"><div id="container1" class="container1"></div></div>
+				<!-- ana-content结束 -->
+				<div class="ana-content-charts"><div id="container2" class="container2"></div></div>
+				<!-- ana-content结束 -->
+				<div class="ana-content-charts"><div id="container3" class="container3"></div></div>
+				<!-- ana-content结束 -->
+				<div class="ana-content-charts"><div id="container4" class="container4"></div></div>
+				<!-- ana-content结束 -->
+			</div>
+			<!-- wrap-right结束 -->
+		</div>
+		<!-- wrap结束 -->
+	</div>
+	<!-- mainView结束 -->
+</body>
+</html>
